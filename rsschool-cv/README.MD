@@ -1,1 +1,1 @@
-this is where the link to this CV is going to be
+https://github.com/beastdope/rsschool-cv/blob/gh-pages/rsschool-cv/cv.md
