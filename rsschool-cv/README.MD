@@ -1,1 +1,1 @@
-https://github.com/beastdope/rsschool-cv/blob/gh-pages/rsschool-cv/cv.md
+https://github.com/beastdope/rsschool-cv/blob/gh-pages/rsschool-cv/cv.md    
