@@ -1,0 +1,678 @@
+
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  @font-face {
+    font-family: InterLight;
+    src: url("../assets/fonts/Inter-Light.ttf");
+    font-weight: auto;
+  }
+  @font-face {
+    font-family: Inter;
+    src: url("../assets/fonts/Inter-Medium.ttf");
+    font-weight: auto;
+  }
+  @font-face {
+    font-family: InterBold;
+    src: url("../assets/fonts/Inter-Bold.ttf");
+    font-weight: bold;
+  }
+
+  body{
+    font-family: InterThin,sans-serif;
+  }
+  .logo-image{
+    position: absolute;
+    margin: 0 0 0 40px;
+    left: 175px;
+    top: 0;
+    vertical-align: bottom;
+  }
+  .logo-underline{
+    position: absolute;
+    margin: 80px 0 80px 200px;
+    left: 200px;
+    top: 110px;
+    vertical-align: bottom;
+  }
+  .logo-underline{
+    position: absolute;
+    top: 260px;
+    left: 0;
+
+  }
+  .logo-underline2{
+    position: absolute;
+  }
+
+
+
+
+  .container{
+    position: absolute;
+    width: 1440px;
+    height: 2040px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0,0,0,1);
+
+  }
+
+  .contact{
+    position: absolute;
+    top: 400px;
+    left: 170px;
+    width: 352px;
+    height: 180px;
+
+  }
+  .skills{
+    position: absolute;
+    top: 400px;
+    left: 170px;
+    width: 352px;
+    height: 180px;
+
+  }
+  .skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .contact-info-title{
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    color: black;
+    position: absolute;
+    width: 107px;
+    height: 36px;
+    left: 25px;
+    top: 0;
+  }
+  .contact ul{
+    list-style: none;
+
+  }
+  .contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .icons-contact{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 23px;
+    top: 70px;
+
+  }
+
+  .contact-info-item a{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 23px;
+    top: 70px;
+
+  }
+
+  .icons-item1{
+    margin-bottom: 8px;
+  }
+  .icons-item2{
+    margin-bottom: 8px;
+  }
+  .icons-item3{
+    margin-bottom: 8px;
+  }
+  .contact-info-item1 {
+    font-size: 20px;
+    width: 296px;
+    height: 32px;
+    position: relative;
+    margin-bottom: 0;
+    left: 50px;
+    top: 75px;
+    font-family: InterLight,sans-serif;
+
+  }
+  .contact-info-item2 {
+    font-size: 20px;
+    width: 296px;
+    height: 32px;
+    position: relative;
+    margin-bottom: 0;
+    left: 50px;
+    top: 86px;
+    font-family: InterLight,sans-serif;
+
+  }
+  .contact-info-item3 {
+    font-size: 20px;
+    width: 296px;
+    height: 32px;
+    position: relative;
+    margin-bottom: 0;
+    left: 50px;
+    top: 98px;
+    font-family: InterLight,sans-serif;
+
+  }
+
+
+
+
+  .skills ul {
+    list-style: inherit;
+  }
+
+  .skills-title{
+    list-style: none;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    color: black;
+    position: absolute;
+    width: 107px;
+    height: 36px;
+    left: 25px;
+    top: 295px;
+  }
+
+  .skills-item1{
+    font-size: 20px;
+    width: 296px;
+    height: 32px;
+    position: relative;
+    margin-bottom: 0;
+    left: 20px;
+    top: 370px;
+    font-family: InterLight,sans-serif;
+  }
+  .skills-item2{
+    font-size: 20px;
+    width: 296px;
+    height: 32px;
+    position: relative;
+    margin-bottom: 0;
+    left: 20px;
+    top: 380px;
+    font-family: InterLight,sans-serif;
+  }
+  .skills-item3{
+    font-size: 20px;
+    width: 296px;
+    height: 32px;
+    position: relative;
+    margin-bottom: 0;
+    left: 20px;
+    top: 390px;
+    font-family: InterLight,sans-serif;
+  }
+  .skills-item4{
+    font-size: 20px;
+    width: 296px;
+    height: 32px;
+    position: relative;
+    margin-bottom: 0;
+    left: 20px;
+    top: 400px;
+    font-family: InterLight,sans-serif;
+  }
+
+  .logo-underline2{
+    position: absolute;
+    margin: 0 0 80px 200px;
+    vertical-align: bottom;
+    top: 640px;
+
+  }
+
+
+
+  .education ul {
+    list-style: inherit;
+  }
+
+  .education-title{
+    list-style: none;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    color: black;
+    position: absolute;
+    width: 107px;
+    height: 36px;
+    left: 196px;
+    top: 1020px;
+  }
+
+  .education-item1{
+    font-size: 20px;
+    width: 296px;
+    height: 32px;
+    position: relative;
+    margin-bottom: 0;
+    left: 220px;
+    top: 1080px;
+    font-family: InterLight,sans-serif;
+  }
+  .education-item2{
+    font-size: 20px;
+    width: 296px;
+    height: 32px;
+    position: relative;
+    margin-bottom: 0;
+    left: 220px;
+    top: 1160px;
+    font-family: InterLight,sans-serif;
+  }
+  .education-item-bold1{
+    position: relative;
+    top: 10px;
+  }
+  .education-item-bold2{
+    position: relative;
+    top: 10px;
+  }
+  .education-item-text{
+    position: relative;
+    top: -5px;
+  }
+  .education-item-text2{
+    position: relative;
+    top: -5px;
+  }
+
+  .logo-underline3{
+    position: absolute;
+    margin: 400px 0 80px 200px;
+    vertical-align: bottom;
+    top: 570px;
+  }
+  .logo-underline4{
+    position: absolute;
+    margin: 400px 0 80px 200px;
+    vertical-align: bottom;
+    top: 943px;
+  }
+
+  .language-title{
+    list-style: none;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    color: black;
+    position: absolute;
+    width: 107px;
+    height: 36px;
+    left: 196px;
+    top: 1390px;
+  }
+  .language-list ul{
+
+  }
+  .language-list-item1{
+    list-style: none;
+    font-size: 20px;
+    width: 296px;
+    height: 32px;
+    position: relative;
+    margin-bottom: 0;
+    left: 196px;
+    top: 1395px;
+    font-family: InterLight,sans-serif;
+  }
+  .language-list-item2{
+    list-style: none;
+    font-size: 20px;
+    width: 296px;
+    height: 32px;
+    position: relative;
+    margin-bottom: 0;
+    left: 196px;
+    top: 1405px;
+    font-family: InterLight,sans-serif;
+  }
+  .language-list-item3{
+    list-style: none;
+    font-size: 20px;
+    width: 296px;
+    height: 32px;
+    position: relative;
+    margin-bottom: 0;
+    left: 196px;
+    top: 1415px;
+    font-family: InterLight,sans-serif;
+  }
+
+  .name-title{
+    font-family: InterLight,sans-serif;
+    width: 450px;
+    height: 52px;
+    font-size: 48px;
+    position: absolute;
+    left: 648px;
+    top: 120px;
+  }
+  .profession{
+    font-family: InterLight,sans-serif;
+    width: 700px;
+    height: 36px;
+    font-size: 28px;
+    position: absolute;
+    left: 648px;
+    top: 190px;
+  }
+  .location-image{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 648px;
+    top: 250px;
+  }
+  .location-place{
+    font-family: InterLight, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    width: 300px;
+    height: 32px;
+    left: 700px;
+    top: 255px;
+  }
+  .logo-underline5{
+    position: absolute;
+    left: 650px;
+    top: 340px;
+
+  }
+
+  .about-me-list-title{
+    list-style: none;
+    font-family: Inter, sans-serif;
+    font-size: 28px;
+    width: 624px;
+    height: 36px;
+    position: absolute;
+    top: 401px;
+    left: 650px;
+  }
+  .about-me-list-item1{
+    list-style: none;
+    font-family: InterLight, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+
+    position: relative;
+    width: 624px;
+    height: 128px;
+    left: 650px;
+    top: 310px;
+
+
+  }
+  .logo-underline6{
+    position: absolute;
+    left: 650px;
+    top: 640px;
+
+  }
+
+  .experience-list-title{
+    list-style: none;
+    font-family: Inter, sans-serif;
+    font-size: 28px;
+
+    width: 624px;
+    height: 36px;
+    position: absolute;
+    top: 696px;
+    left: 650px;
+  }
+  .experience-list-item1{
+    list-style: inherit;
+    font-family: InterLight, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    position: relative;
+    width: 624px;
+    height: 128px;
+    left: 670px;
+    top: 476px;
+  }
+  .experience-list-item2{
+    list-style: inherit;
+    font-family: InterLight, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    position: relative;
+    width: 624px;
+    height: 128px;
+    left: 670px;
+    top: 570px;
+  }
+  .experience-list-item-description{
+    list-style: inherit;
+    font-family: InterLight, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    position: relative;
+    width: 624px;
+    height: 128px;
+    left: 0;
+    top: 16px;
+  }
+
+  .logo-underline7{
+    position: absolute;
+    left: 650px;
+    top: 1340px;
+
+  }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>MyCV</title>
+</head>
+<body>
+<div class="container">
+  <div class="logo">
+    <div class="logo-image">
+      <img src="../assets/images/Logo.png" alt="Logo" height="400" width="300">
+    </div>
+
+    <div class="logo-underline">
+      <img src="../assets/images/LineThin.png" alt="ThinLine" width="344" height="1">
+    </div>
+    <div class="logo-underline2">
+      <img src="../assets/images/LineThin.png" alt="ThinLine" width="344" height="1">
+    </div>
+    <div class="logo-underline3">
+      <img src="../assets/images/LineThin.png" alt="ThinLine" width="344" height="1">
+    </div>
+    <div class="logo-underline4">
+      <img src="../assets/images/LineThin.png" alt="ThinLine" width="344" height="1">
+    </div>
+    <div class="logo-underline5">
+      <img src="../assets/images/LineThin.png" alt="ThinLine" width="624" height="1">
+    </div>
+    <div class="logo-underline6">
+      <img src="../assets/images/LineThin.png" alt="ThinLine" width="624" height="1">
+    </div>
+    <div class="logo-underline7">
+      <img src="../assets/images/LineThin.png" alt="ThinLine" width="624" height="1">
+    </div>
+
+  </div>
+  <div class="contact">
+    <div class="icons-contact">
+      <ul>
+        <li class="icons-item1">
+          <img src="../assets/images/Phone.png" alt="PhoneNumber">
+        </li>
+        <li class="icons-item2">
+          <img src="../assets/images/Mail.png" alt="Email">
+        </li>
+        <li class="icons-item3">
+          <img src="../assets/images/World.png" alt="Website">
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="contact-info">
+      <ul>
+        <li class="contact-info-title">
+          Contact</li>
+        <li class="contact-info-item1">
+          +79779927503
+        </li>
+        <li class="contact-info-item2">
+          beastdope@inbox.ru
+        </li>
+        <li class="contact-info-item3">
+          www.languagefriend.ru
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+  <div class="skills">
+    <ul class="skills-list">
+      <li class="skills-title">
+        Skills
+      </li>
+      <li class="skills-item1">
+        C# Basics
+      </li>
+      <li class="skills-item2">
+        Visual studio
+      </li>
+      <li class="skills-item3">
+        Git system
+      </li>
+      <li class="skills-item4">
+        Perfect memory
+      </li>
+    </ul>
+
+  </div>
+  <div class="education">
+    <ul class="education-list">
+      <li class="education-title">
+        Education
+      </li>
+      <li class="education-item1">
+        2023-2023 <br/>
+        <p class="education-item-bold1"><b>Front-end start</b></p> <br/>
+        <p class="education-item-text">
+          itlogia.ru
+        </p>
+      </li>
+      <li class="education-item2">
+        2014-2018 <br/>
+        <p class="education-item-bold2"><b>English Teacher</b></p><br/>
+        <p class="education-item-text2">
+          Ural State <br> Pedagogical University
+        </p>
+      </li>
+
+    </ul>
+
+  </div>
+  <div class="language">
+    <ul class="language-list">
+      <li class="language-title">
+        Languages
+      </li>
+      <li class="language-list-item1">
+        <b>English </b> - Native
+      </li>
+      <li class="language-list-item2">
+        <b>Russian </b> - Native
+      </li>
+      <li class="language-list-item3">
+        <b>Spanish </b> - Conversational
+      </li>
+
+    </ul>
+
+  </div>
+  <div class="name">
+    <div class="name-container">
+      <p class="name-title"> <b> Artyom Gilkhanian </b></p>
+      <p class="profession">C# Full-stack Developer</p>
+      <div class="location">
+        <p class="location-place">Moscow. Russian Federation.</p>
+        <img class="location-image" src="../assets/images/Location.png" alt="location" width="32" height="32">
+      </div>
+
+    </div>
+
+  </div>
+  <div class="about-me">
+    <div class="about-me-container">
+      <ul class="about-me-list">
+        <li class="about-me-list-title">
+          About me
+        </li>
+        <li class="about-me-list-item1">
+          I am studying to become a C# programmer and aspire to be a C# Developer. I am confident that I will be able to successfully acquire all the necessary skills due to my openness, friendliness, perseverance, desire for personal growth, and excellent memory.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="about-me">
+    <div class="experience-container">
+      <ul class="experience-list">
+        <li class="experience-list-title">
+          Experience
+        </li>
+        <li class="experience-list-item1">
+          April 2023 - May - 2023 <br>
+          <b>FRONT-END</b> <br>
+          RS School <br>
+          <div class="experience-list-item-description">
+            I've done this page as my first HTML & CSS project, and I'd gladly and utterly share it with you
+          </div>
+        </li>
+        <li class="experience-list-item2">
+          March 2023 - March - 2023 <br>
+          <b>FRONT-END COURSE</b> <br>
+          ITLogia <br>
+          <div class="experience-list-item-description">
+            I've done a 7-day course as my first theory and practice experience in HTML, CSS and JavaScrypt. We've worked with WebStorm, Angular, GitHub, tried some effects to set up the website. I kinda liked it, and now I proceed to my next practice week in the RS School Front-end education. Can't wait to see what's going to be next!
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
